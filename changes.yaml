@@ -1,0 +1,116 @@
+
+# example
+#
+# [for each regex]
+#	find ./perl ./public_html ./js -type f | grep -P '\.(html|shtml|js|pl|pm)$' | xargs grep -lP $regex
+#
+
+# old name => new name
+class:
+
+  arrow					: popover-arrow or tooltip-arrow
+
+  badge-(primary|secondary|info|success|warning|light|dark)	: bg-$1		
+
+  badge-pill			: rounded-pill
+
+  border-left			: border-start
+  border-left-0			: border-start-0
+  border-right			: border-end
+  border-right-0		: border-end-0
+
+  bs-popover-left		: bs-popover-start
+  bs-popover-right		: bs-popover-end
+  bs-tooltip-left		: bs-tooltip-start
+  bs-tooltip-right		: bs-tooltip-end
+
+  carousel-item-left	: carousel-item-start
+  carousel-item-right	: carousel-item-end
+
+  close					: btn-close
+
+  custom-range			: form-range
+
+  dropdown-menu-(sm-|md-|lg-|xl-|)left	: dropdown-menu-$1start
+  dropdown-menu-(sm-|md-|lg-|xl-|)right	: dropdown-menu-$1end
+
+  dropleft				: dropstart
+  dropright				: dropend
+
+  float-(sm-|md-|lg-|xl-|)left	: float-$1start
+  float-(sm-|md-|lg-|xl-|)right	: float-$1end
+
+  font-italic			: fst-italic
+
+  font-weight-(lighter|light|normal|bold|bolder)	: fw-$1
+ 
+  ml-(0|1|2|3|4|5|auto|n1|n2|n3|n4|n5)	: ms-$1				
+  mr-(0|1|2|3|4|5|auto|n1|n2|n3|n4|n5)	: me-$1
+
+  pl-(0|1|2|3|4|5|auto)	: ps-$1
+  pr-(0|1|2|3|4|5|auto)	: pe-$1
+
+  embed-responsive-(\d+)by(d+)		: ratio-$1x$2	# 1by1 , 4by3, 16by9, 21by9 
+
+  rounded-left			: rounded-start
+  rounded-right			: rounded-end
+
+  text-(sm-|md-|lg-|xl-|)left	: text-$1start
+  text-(sm-|md-|lg-|xl-|)right	: text-$1end
+
+  sr-only				: visually-hidden
+  sr-only-focusable		: visually-hidden-focusable
+
+  text-monospace		: font-monospace
+
+  thead-light			: table-light
+  thead-dark			: table-dark
+
+
+# dropped classes
+class_remove:
+  - btn_block				
+  - text-hide				
+  - media					
+  - pre-scrollable			
+  - text-justify				
+  - custom-control		
+  - jumbotron				
+  - order-(6|7|8|9|10|11|12)
+
+# renamed, data-fred becomes data-bs-fred
+data_attributes: 
+  - data-animation
+  - data-autohide
+  - data-boundary
+  - data-browse
+  - data-container
+  - data-content
+  - data-delay
+  - data-dismiss
+  - data-display
+  - data-fallbackPlacement
+  - data-flip
+  - data-html
+  - data-interval 
+  - data-keyboard
+  - data-offset
+  - data-parent
+  - data-pause
+  - data-placement
+  - data-popperConfig
+  - data-reference
+  - data-ride
+  - data-sanitize
+  - data-sanitizeFn
+  - data-selector
+  - data-spy
+  - data-target
+  - data-template
+  - data-title
+  - data-toggle
+  - data-touch
+  - data-trigger
+  - data-whiteList
+  - data-wrap
+
