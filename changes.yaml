@@ -10,7 +10,7 @@ class:
 
   arrow					: popover-arrow or tooltip-arrow
 
-  badge-(primary|secondary|info|success|warning|light|dark)	: bg-$1		
+  badge-(primary|secondary|info|success|warning|danger|light|dark)	: bg-$1		
 
   badge-pill			: rounded-pill
 
@@ -44,13 +44,13 @@ class:
 
   font-weight-(lighter|light|normal|bold|bolder)	: fw-$1
  
-  ml-(0|1|2|3|4|5|auto|n1|n2|n3|n4|n5)	: ms-$1				
-  mr-(0|1|2|3|4|5|auto|n1|n2|n3|n4|n5)	: me-$1
+  ml-(sm-|md-|lg-|xl-|)(0|1|2|3|4|5|auto|n1|n2|n3|n4|n5)	: ms-$1$2				
+  mr-(sm-|md-|lg-|xl-|)(0|1|2|3|4|5|auto|n1|n2|n3|n4|n5)	: me-$1$2
 
-  pl-(0|1|2|3|4|5|auto)	: ps-$1
-  pr-(0|1|2|3|4|5|auto)	: pe-$1
+  pl-(sm-|md-|lg-|xl-|)(0|1|2|3|4|5|auto)	: ps-$1$2
+  pr-(sm-|md-|lg-|xl-|)(0|1|2|3|4|5|auto)	: pe-$1$2
 
-  embed-responsive-(\d+)by(d+)		: ratio-$1x$2	# 1by1 , 4by3, 16by9, 21by9 
+  embed-responsive-(\d+)by(\d+)		: ratio-$1x$2	# 1by1 , 4by3, 16by9, 21by9 
 
   rounded-left			: rounded-start
   rounded-right			: rounded-end
@@ -69,14 +69,24 @@ class:
 
 # dropped classes
 class_remove:
-  - btn_block				
-  - text-hide				
-  - media					
-  - pre-scrollable			
-  - text-justify				
-  - custom-control		
+  - accordion
+  - btn-block				
+  - btn-group-toggle
+  - card-(columns|deck)
+  - custom-(checkbox|control|control-inline|file|file-input|file-label|radio|select|select-lg|select-sm|switch)
+  - embed-responsive(|-item)
+  - focus
+  - form-(control-file|control-range|group|inline|row)
+  - input-group-(append|prepend)
   - jumbotron				
-  - order-(6|7|8|9|10|11|12)
+  - m(t|b|x|y|)-(sm-|md-|lg-|xl-|)n(1|2|3|4|5)				
+  - media					
+  - no-gutters
+  - order-(sm-|md-|lg-|xl-|)(6|7|8|9|10|11|12)
+  - pre-scrollable			
+  - rounded-(lg|sm)
+  - text-hide				
+  - text-justify				
 
 # renamed, data-fred becomes data-bs-fred
 data_attributes: 
