@@ -5,7 +5,7 @@
 #	find ./perl ./public_html ./js -type f | grep -P '\.(html|shtml|js|pl|pm)$' | xargs grep -lP $regex
 #
 
-# old name => new name
+# classes renamed, old name => new name
 class:
 
   arrow					: popover-arrow or tooltip-arrow
@@ -81,6 +81,7 @@ class_remove:
   - jumbotron				
   - m(t|b|x|y|)-(sm-|md-|lg-|xl-|)n(1|2|3|4|5)				
   - media					
+  - modal-scrollbar-measure
   - no-gutters
   - order-(sm-|md-|lg-|xl-|)(6|7|8|9|10|11|12)
   - pre-scrollable			
