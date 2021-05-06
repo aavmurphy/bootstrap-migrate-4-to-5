@@ -7,7 +7,7 @@ use YAML;
 my $changes_regex = YAML::LoadFile( '../changes.yaml' );
 
 my $old < io( '4.5.3.css' );
-my $new < io( '5.0.0-beta1.css' );
+my $new < io( '5.0.0.css' );
 
 ##
 print "Classes in the old, but not in the new CSS file\n";
